@@ -1,7 +1,7 @@
 import scrapy
 
 
-class DenemeSpider(scrapy.Spider):
+class apartmentForRent(scrapy.Spider):
     name = "apartmentForRent"
     allowed_domains = ["hepsiemlak.com"]
     start_urls = ["https://www.hepsiemlak.com/istanbul-sahibinden"]
