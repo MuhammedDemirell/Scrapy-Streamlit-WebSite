@@ -1,0 +1,21 @@
+scrapy startproject apartmentForRent
+scrapy genspider apartmentForRent store.steampowered.com
+scrapy crawl apartmentForRent -o veriler.json
+ctrl shift + p
+ctrl alt + l
+scrapy shell
+scrapy fetch https://kidega.com
+fetch("https://kidega.com/cok-satan-kitaplar/")   
+r=scrapy.Request(url="https://kidega.com/cok-satan-kitaplar/")  fetch(r) ,  response.body   view(response)
+baslik = response.xpath('//div[@class="col-md-12 col-xs-12 ttl"]/h1/text()')
+
+https://www.yemeksepeti.com/ankara
+
+
+DELETE FROM add_apartment
+WHERE id IN (
+    SELECT id
+    FROM add_apartment
+    ORDER BY id DESC
+    LIMIT 10
+);
