@@ -1,3 +1,0 @@
-scrapy startproject apartmentForRent
-scrapy genspider apartmentForRent hepsiemlak.com
-scrapy crawl apartmentForRent -o veriler.json
