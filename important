@@ -1,0 +1,6 @@
+scrapy startproject apartmentForRent
+scrapy genspider apartmentForRent https://www.hepsiemlak.com/istanbul-sahibinden
+scrapy crawl apartmentForRent -o data.json
+
+
+
